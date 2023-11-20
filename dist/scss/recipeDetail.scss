@@ -1,0 +1,108 @@
+.recipeDetail-holder{
+  min-height: 100vh;
+  width: 100%;
+  .detail-holder{
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    .detailDesc-holder{
+      padding-top: 100px;
+      height: 520px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 35px;
+      .detailImage-holder{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .sideways-title{
+          letter-spacing: 7pt;
+          writing-mode: vertical-rl; 
+          transform: rotate(180deg); 
+          font-size: 30px;
+          font-family: Lato;
+        }
+        .detailImg{
+          margin-left: 20px;
+          height: 100%;
+          width: 420px;
+          background-image: url(../images/recipe-pizza.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+      }
+      .detailDesc{
+        height: 100%;
+        width: 500px;
+        h1{
+          font-family: Lato;
+          margin-bottom: 35px;
+          letter-spacing: 7pt;
+        }
+        p{
+          font-family: Caveat;
+          margin-bottom: 35px;
+          font-size: 20px;
+        }
+        h3{
+          font-family: Lato;
+          margin-bottom: 35px;
+          font-size: 20px;
+          letter-spacing: 7pt;
+        }
+      }
+    }
+    .detailInfo{
+      min-height: 250px;
+      padding-bottom: 50px;
+      h1{
+        font-family: Lato;
+        letter-spacing: 7pt;
+      }
+      li{
+        font-family: Caveat;
+        list-style-type: none;
+        font-size: 20px;
+      }
+    }
+  .editButton{
+    padding: 7px 35px;
+    border-radius: 20px;
+    border: none;
+    filter: drop-shadow(2px 2px 2px);
+    background-color: $site-yellow;
+    margin-bottom: 100px;
+    a {
+      font-family: Caveat;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    }
+  }
+  .editButton:hover{
+    transform: scale(1.05);
+    transition: 0.3%;
+  }
+  }
+}
+
+@media screen and (max-width: 772px){
+  .detailDesc-holder{
+    flex-direction: column;
+    height: 800px !important;
+   .detailDesc{
+    margin-top: 20px;
+   }
+  }
+}
+
+@media screen and (max-width: 360px){
+  .detailDesc-holder{
+    width: 250px;
+    height: 900px !important;
+    .detailDesc{
+      width: 250px !important;
+    }
+  }
+}

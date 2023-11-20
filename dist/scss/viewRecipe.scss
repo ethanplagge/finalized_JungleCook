@@ -1,0 +1,208 @@
+.browse-holder{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(180deg, rgb(167, 232, 189, 0.7) 100%, rgba(0,0,0,0.90) 0%), url(../images/recipe-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  .recipe-holder{
+    min-height: 200px;
+    width: 110%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .recipe{
+      width: 525px;
+      display: flex;
+      margin-bottom: 70px;
+      .imageHolder{
+        position: relative;
+      }
+      .recipeImg{
+        height: 100%;
+        width: 300px;
+        border-radius: 20px;
+
+        .viewButton{
+          width: 150px;
+          height: 50px;
+          background-color: $site-yellow;
+          border: none;
+          border-radius: 20px;
+          filter: drop-shadow(2px 2px 2px);
+          font-family: Caveat;
+          font-size: 30px;
+          position: absolute;
+          bottom: 80px;
+          left: 75px;
+          cursor: pointer;
+          a{
+            text-decoration: none;
+            color: black;
+          }
+        }
+        .viewButton:hover{
+          transform: scale(1.05);
+          transition: 0.3%;
+        }
+        .editButton{
+          width: 100px;
+          height: 25px;
+          background-color: $site-yellow;
+          border: none;
+          border-radius: 20px;
+          filter: drop-shadow(2px 2px 2px);
+          font-family: Caveat;
+          font-size: 15px;
+          position: absolute;
+          bottom: -40px;
+          left: 0px;
+          cursor: pointer;
+        }
+        .editButton:hover{
+          transform: scale(1.05);
+          transition: 0.3%;
+        }
+        .deleteButton{
+          width: 100px;
+          height: 25px;
+          background-color: $site-yellow;
+          border: none;
+          border-radius: 20px;
+          filter: drop-shadow(2px 2px 2px);
+          font-family: Caveat;
+          font-size: 15px;
+          position: absolute;
+          bottom: -40px;
+          left: 125px;
+          cursor: pointer;
+        }
+        .deleteButton:hover{
+          transform: scale(1.05);
+          transition: 0.3%;
+        }
+        img{
+          display: block;
+          width: 100%;
+          height: 224px;
+          object-fit: cover;
+          border-radius: 20px;
+        }
+      }
+      .recipeInfo{
+        height: 224px;
+        width: 200px;
+        background-color: white;
+        border-radius: 20px;
+        margin: 0 auto;
+        .titleDesc{
+          margin: 0 auto;
+          margin-top: 20px;
+          margin-bottom: 10px;
+          text-align: center;
+          font-family: Lato;
+          width: 80%;
+          height: 30px;
+          border-bottom: 5px solid black;
+          p{
+            text-align: left;
+            font-family: Lato;
+            font-size: 11px;
+          }
+        }
+        .cookWrapper{
+          height: 40%;
+          margin-top: 80px;
+          .cookInfo{
+            height: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .cookTimeIcon{
+              height: 25px;
+              width: 25px;
+              background-image: url(../images/time.svg);
+              background-position: center;
+              background-size: cover;
+            }
+            .cookTimeInfo{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-left: 20px;
+              p{
+                margin-top: 12px;
+                font-family: Lato;
+                font-size: 9px;
+              }
+            }
+            .cookServeIcon{
+              height: 25px;
+              width: 25px;
+              background-image: url(../images/servings.svg);
+              background-position: center;
+              background-size: cover;
+            }
+            .cookServeInfo{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-left: 20px;
+              p{
+                margin-top: 12px;
+                font-family: Lato;
+                font-size: 9px;
+              }
+            }
+          }
+        }
+      }
+      .descriptions{
+        margin-bottom: 20px;
+      }
+      
+      .instructions{
+        margin-bottom: 20px;
+      }
+      
+      ol, ul{
+        margin-left: 20px;
+      }
+    }
+    .button-holder{
+      width: 100%;
+      height: 20px;
+      background-color: blue;
+    }
+  }
+  .vr{
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 100px;
+    min-height: 200px;
+   p{
+    font-family: Caveat;
+    font-size: 20px;
+   }
+  }
+}
+
+@media screen and (max-width: 360px){
+  .recipe-holder{
+    flex-direction: column;
+    .recipe{
+      width: 300px;
+      flex-direction: column;
+      .editButton{
+        bottom: -260px !important;
+      }
+      .deleteButton{
+        bottom: -260px !important;
+      }
+      .recipeInfo{
+        width: 300px !important; 
+      }
+    }
+  }
+}
+

@@ -1,0 +1,121 @@
+
+.form-Holder{
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.form-Holder p{
+  font-family: Caveat;
+  font-size: 20px;
+}
+
+.form-Holder input{
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 50px;
+  border: none;
+  border-bottom: 2px solid black;
+  padding-left: 10px;
+}
+
+.formTop{
+  position: relative;
+}
+
+.formTop .imageBtn {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  background-color: $site-offPink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-family: Caveat;
+}
+
+.formDesc{
+  position: relative;
+  p{
+    font-family: Lato;
+    font-size: 16px;
+  }
+}
+
+.formDesc .descBtn {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-color: $site-offPink;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.formInst{
+  position: relative;
+  p{
+    font-family: Lato;
+    font-size: 16px;
+  }
+}
+
+.formInst .formBtn {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-color: $site-offPink;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.formDesc, .formInst{
+  margin-top: 100px;
+}
+
+.submitBtn{
+  width: 80%;
+  height: 50px;
+  background-color: $site-offPink;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-family: Caveat;
+  font-size: 20px;
+}
+
+.submitChanges{
+  width: 20%;
+  height: 50px;
+  background-color: $site-offPink;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-family: Caveat;
+  font-size: 20px;
+}

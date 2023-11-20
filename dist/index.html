@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    <div class="nav-holder">
+      <div class="logo"></div>
+      <nav>
+        <ul>
+          <li><a href="#" id="home">Home</a></li>
+          <li><a href="#" id="addRecipe">Create Recipe</a></li>
+          <li><a href="#" id="browse">Browse</a></li>
+          <li><a href="#" id="viewRecipe">Your Recipes</a></li>
+          <li class="login"><a href="#" id="login">Login</a></li>
+        </ul>
+      </nav>
+      <div id="ham-icon" class="hamburger-icon" onclick="toggleMenu()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="#" id="home">Home</a></li>
+          <li><a href="#" id="addRecipe">Create Recipe</a></li>
+          <li><a href="#" id="browse">Browse</a></li>
+          <li><a href="#" id="viewRecipe">Your Recipes</a></li>
+          <li class="login"><a href="#" id="login">Login</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="app"></div>
+    <footer>
+      <div class="link-container">
+        <p>Copyright © 2019 The Jungle Cook</p>
+        <a href="#" id="login">Login</a>
+        <a href="#" id="browse">Recipes By Category</a>
+        <p>Privacy and Copyright</p>
+        <a href="#" id="addRecipe">Create Recipe</a>
+        <a href="#" id="viewRecipe">Your Recipes</a>
+        <div class="social-media-container">
+          <div class="facebook"></div>
+          <div class="instagram"></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="lib/jquery-3.7.1.min.js"></script>
+  <script type="module" src="data/model.js"></script>
+  <script type="module" src="app/app.js"></script>
+  <script src="app/menu.js"></script>
+</body>
+</html>

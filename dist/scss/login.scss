@@ -1,0 +1,100 @@
+.login-holder{
+  min-height: 100vh;
+  background-color: $site-yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .content{
+    height: 70%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    .login-holder{
+      height: 100%;
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      p{
+        font-family: LatoItalic;
+      }
+      h1{
+        text-align: left;
+        font-family: LatoBold;
+      }
+      input{
+        height: 50px;
+        width: 100%;
+        padding-left: 5px;
+        background-color: $site-yellow;
+        border: none;
+        border-bottom: 3px solid black;
+        margin-bottom: 20px;
+      }
+      .signup{
+        width: 100%;
+        height: 50px;
+        background-color: $site-yellow;
+        border: none;
+        border-radius: 20px;
+        filter: drop-shadow(2px 2px 2px);
+        font-family: Caveat;
+        font-size: 30px;
+      }
+    }
+    .signup-holder{
+      height: 100%;
+      width: 250px;
+      p{
+        font-family: LatoItalic;
+      }
+      h1{
+        font-family: LatoBold;
+      }
+      input{
+        height: 50px;
+        width: 100%;
+        padding-left: 5px;
+        border: none;
+        background-color: $site-yellow;
+        border-bottom: 3px solid black;
+        margin-bottom: 20px;
+      }
+      .createAcc{
+        width: 100%;
+        height: 50px;
+        background-color: $site-yellow;
+        border: none;
+        border-radius: 20px;
+        filter: drop-shadow(2px 2px 2px);
+        font-family: Caveat;
+        font-size: 30px;
+      }
+      .createAcc:hover{
+        cursor: pointer;
+      }
+      .signup{
+        width: 100%;
+        height: 50px;
+        background-color: blue;
+        border: none;
+        border-radius: 20px;
+        filter: drop-shadow(2px 2px 2px);
+        font-family: Caveat;
+        font-size: 30px;
+      }
+     .signup:hover{
+      cursor: pointer;
+     }
+    }
+  }
+}
+
+@media screen and (max-width: 772px){
+  .content{
+    min-height: 100vh;
+    flex-direction: column;
+  }
+}
+

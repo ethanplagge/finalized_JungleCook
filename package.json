@@ -1,0 +1,21 @@
+{
+  "name": "finalized_junglecook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "compile": "sass dist/scss/styles.scss dist/css/styles.css -w",
+    "live-server": "live-server dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.5"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
